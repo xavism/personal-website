@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import navbar from './components/navbar'
+
 import router from './router'
 
 /* eslint-disable no-new */
