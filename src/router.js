@@ -5,13 +5,13 @@ Vue.use(Router)
 
 import home from './containers/Home'
 import dashboard from './containers/dashboard'
-import projects from './containers/projects'
+import posts from './containers/posts'
 
 // application routes
 const routes = [
   { path: '/', component: home },
   { path: '/dashboard', component: dashboard },
-  { path: '/projects', component: projects }
+  { path: '/posts', component: posts }
 ]
 
 // export router instance

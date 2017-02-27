@@ -44,6 +44,7 @@
 <script>
 export default {
   name: 'navbar',
+  props: ['tabsy'],
   data () {
     return {
       github: {
@@ -60,8 +61,8 @@ export default {
           icon: 'fa fa-rebel'
         },
         {
-          title: 'Projects List',
-          path: '/projects',
+          title: 'Posts',
+          path: '/posts',
           icon: 'fa fa-list-alt'
         }
       ]
