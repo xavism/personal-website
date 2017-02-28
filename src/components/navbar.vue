@@ -44,7 +44,6 @@
 <script>
 export default {
   name: 'navbar',
-  props: ['tabsy'],
   data () {
     return {
       github: {

@@ -2,6 +2,7 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
 import navbar from './components/navbar'
+import hero from './components/hero/hero'
 import ApolloClient, { createNetworkInterface, addTypename } from 'apollo-client'
 import VueApollo from 'vue-apollo'
 import router from './router'
@@ -23,7 +24,7 @@ Vue.use(VueApollo, {
 new Vue({
   template: `
   <div>
-    <navbar />
+    <hero />
     <section class="section">
       <div class="container">
         <router-view></router-view>
@@ -33,6 +34,7 @@ new Vue({
   `,
   router,
   components: {
-    navbar
+    navbar,
+    hero
   }
 }).$mount('#app')
