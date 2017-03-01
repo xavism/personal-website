@@ -37,6 +37,9 @@
   $primary: #00d1b2;
   $pink: #ff3860;
   .hero-body {
+    .hidden {
+      opacity: 0;
+    }
     .title {
       strong.is-pink {
         color: $pink;
