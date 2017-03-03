@@ -1,7 +1,7 @@
 <template lang="html">
   <!-- Hero content: will be in the middle -->
   <div class="hero-body">
-    <div class="container has-text-centered">
+    <div id="profile-div" class="container has-text-centered hidden">
       <figure class="image is-256x256 is-centered">
         <img src="/static/Profile-shadow.png">
       </figure>
@@ -19,6 +19,7 @@
 <script>
   import social from './../social-media-nav'
   import { socialMedia } from './../../data/data'
+  import $ from 'jquery'
 
   export default {
     name: 'hero-body',
@@ -31,14 +32,25 @@
       }
     }
   }
+
+  $(document).ready(function () {
+    $('#profile-div').toggleClass('hidden')
+  })
+  
 </script>
 
 <style lang="scss">
   $primary: #00d1b2;
   $pink: #ff3860;
   .hero-body {
+    #profile-div {
+      //top: 0px;
+      -webkit-transition: all 1.5s, height 1.5s, -webkit-transform 1.5s;
+      transition: all 1.5s, height 1.5s, transform 1.5s;
+    }
     .hidden {
       opacity: 0;
+      margin-top: -200px;
     }
     .title {
       strong.is-pink {

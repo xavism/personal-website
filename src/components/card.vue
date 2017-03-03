@@ -37,5 +37,8 @@
 <style lang="scss">
 .card.is-centered {
   margin: 0 auto;
+  -webkit-box-shadow: 7px 7px 24px -7px rgba(61,61,61,1);
+  -moz-box-shadow: 7px 7px 24px -7px rgba(61,61,61,1);
+  box-shadow: 7px 7px 24px -7px rgba(61,61,61,1);
 }
 </style>

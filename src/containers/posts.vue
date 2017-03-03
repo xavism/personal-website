@@ -23,8 +23,6 @@
 
 <script>
 import { posts } from './../data/data'
-
-console.log(posts)
 // Component def
 export default {
   name: 'posts',
