@@ -1,19 +1,6 @@
 <template lang="html">
   <div id="home">
-  <div class="section-title has-text-centered">
-  	<p class="title is-1">
-  		Welcome to my little space!
-  		<span class="icon is-large">
-  			<i class="fa is-danger fa-heart-o"></i>
-		</span>
-	</p>
-	<p class="subtitle is-3">
-		Keep reading to know more about me
-		<span class="icon is-medium">
-  			<i class="fa is-primary fa-hand-peace-o"></i>
-		</span>
-	</p>
-  </div>
+    <headersection :headdata="homeheader"/>
 	<div class="columns">
 		<div class="column">
 			<card :cardInfo="cardInfo"/>
@@ -26,34 +13,15 @@
 </template>
 
 <script>
-import { cardInfo } from './../data/data'
+import { cardInfo, object, homeheader } from './../data/data'
 import card from './../components/card'
 import window from './../components/window'
-
-let object = {
-  code: `
-    let me = {
-      name: Xavi,
-      lastName: Sánchez,
-      languages: ['Spanish', 'Catalan', 'English', 'German'],
-      universities: [{
-        longName: 'Facultad dInformàtica de Barcelona',
-        shortName: 'FIB',
-        country: 'Spain'
-        }, {
-        longName: 'Karlsruher Institute für Technologie',
-        shortName: 'KIT',
-        country: 'Germany'
-      }]
-    }
-    `,
-  language: 'javascript'
-}
+import headersection from './../components/header'
 
 export default {
   name: 'home',
-  components: { card, window },
-  data () { return { cardInfo, object } }
+  components: { card, window, headersection },
+  data () { return { cardInfo, object, homeheader } }
 }
 </script>
 
@@ -81,6 +49,10 @@ export default {
 			}
 	  	}
 	  }
+  }
+  #home {
+  	margin-top: 40px;
+  	margin-bottom: 80px;
   }
 
   .window {

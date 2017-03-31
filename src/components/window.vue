@@ -15,6 +15,8 @@
 <script>
 import hljs from 'highlight.js'
 import $ from 'jquery'
+import 'highlight.js/styles/atom-one-dark.css'
+import 'highlight.js/styles/atom-bulma.css'
 
 console.log(hljs)
 hljs.initHighlighting()
@@ -46,6 +48,7 @@ export default {
   $sunset : #F64747;
   $darkGrey : #DADADA;
   $lightGrey : #EEEEEE;
+  $pink: #ff3860;
 
   $heightBar: 30px;
 
@@ -77,7 +80,7 @@ export default {
     }
 
     .dot.close {
-      background-color: $sunset;
+      background-color: $pink;
     }
     .dot.expand {
       background-color: $primary;
@@ -85,6 +88,7 @@ export default {
     .dot.minimize {
       background-color: $yellow;
     }
+
   }
 
     pre {

@@ -1,8 +1,9 @@
 // The Vue build version to load with the `import` command
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 import Vue from 'vue'
-import navbar from './components/navbar'
 import hero from './components/hero/hero'
+import home from './containers/home'
+import technological from './containers/technological'
 import ApolloClient, { createNetworkInterface, addTypename } from 'apollo-client'
 import VueApollo from 'vue-apollo'
 import router from './router'
@@ -27,6 +28,26 @@ new Vue({
     <hero />
     <section class="section">
       <div class="container">
+        <home />
+        <technological />
+      </div>
+    </section>
+  </div>
+  `,
+  router,
+  components: {
+    hero,
+    home,
+    technological
+  }
+}).$mount('#app')
+/*
+new Vue({
+  template: `
+  <div>
+    <hero />
+    <section class="section">
+      <div class="container">
         <router-view></router-view>
       </div>
     </section>
@@ -34,7 +55,7 @@ new Vue({
   `,
   router,
   components: {
-    navbar,
     hero
   }
 }).$mount('#app')
+*/
