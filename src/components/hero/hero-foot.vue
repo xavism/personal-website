@@ -12,43 +12,6 @@
                 
               </router-link>
               </li>
-
-<!--               <li class="is-active">
-                <a>
-                  <span class="icon is-small"><i class="fa fa-vcard"></i></span>
-                  <span>Description</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fa fa-comments"></i></span>
-                  <span>Contact</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fa fa-briefcase"></i></span>
-                  <span>Work Experience</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fa fa-code-fork"></i></span>
-                  <span>Technological Stack</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fa fa-graduation-cap"></i></span>
-                  <span>Education</span>
-                </a>
-              </li>
-              <li>
-                <a>
-                  <span class="icon is-small"><i class="fa fa-code"></i></span>
-                  <span>Skills</span>
-                </a>
-              </li> -->
             </ul>
         </nav>
       </div>

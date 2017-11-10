@@ -3,13 +3,13 @@
   <div class="hero-body">
     <div id="profile-div" class="container has-text-centered hidden">
       <figure class="image is-256x256 is-centered">
-        <img src="/static/Profile-shadow.png">
+        <img src="/static/Profile2-shadow.png">
       </figure>
       <h1 class="title">
         Hi! My name is <strong class="is-pink">Xavi Sánchez</strong>, nice to meet you!
       </h1>
       <h2 class="subtitle">
-        <code>I'm a <strong class="is-primary">Fullstack</strong> developer currently living in Barcelona.</code>
+        <code>I'm a <strong class="is-primary">Fullstack</strong> developer currently living in Madrid.</code>
       </h2>
       <social :socialMedia="socialMedia"/>
     </div>

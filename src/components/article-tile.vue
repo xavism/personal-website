@@ -1,19 +1,14 @@
 <template lang="html">
   <article class="media">
-    <div class="media-left">
-      <figure class="image is-64x64">
-        <img :src="articleInfo.imgPath" alt="Image">
-      </figure>
-    </div>
-    <div class="media-content">
-      <div class="content">
-        <p>
-        <strong class="is-primary">{{ articleInfo.title }}</strong>
-          <br>
-          {{ articleInfo.description }}
-        </p>
-      </div>
-    </div>
+        <div class="column has-text-centered">
+          <figure class="image is-64x64">
+            <img :src="articleInfo.imgPath" :alt="articleInfo.title + ' Image'">
+          </figure>
+          <p class="title is-4"><strong>{{ articleInfo.title }}</strong></p>
+        </div>
+
+  
+
   </article>
 </template>
 
@@ -25,6 +20,9 @@
 </script>
 
 <style lang="scss">
+  .has-text-centered > .image {
+    margin: 0 auto;
+  }
   .card.is-centered {
     margin: 0 auto;
     -webkit-box-shadow: 7px 7px 24px -7px rgba(61,61,61,1);
